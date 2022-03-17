@@ -28,9 +28,11 @@ El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/
 git clone git@github.com:FedeHC/salarios3dg.git
 ```
 
-Con el repo clonado y dentro de la carpeta de descarga del repositorio, procedemos con los sig. pasos.
+<br>
+Con el repo clonado y dentro de la carpeta de descarga del repositorio, procedemos con el resto:
+<br>
 
-2) a) Antes es recomendable usar un entorno virtual como por ej. [VirtualEnv](https://github.com/pypa/virtualenv):
+2) a) OPCIONAL: Antes es recomendable usar un entorno virtual como por ej. [VirtualEnv](https://github.com/pypa/virtualenv):
 
 ```bash
 virtualenv salarios3DG
@@ -41,6 +43,19 @@ virtualenv salarios3DG
 ```bash
 pip install -r requirements.txt
 ```
+
+2) c) OPCIONAL: Tener presente que la librería [spaCy](https://spacy.io/usage#quickstart) puede darnos algunos inconvenientes para instalarlo y usarlo. En ocasiones es necesario descargar un módulo (pipeline de entrenamiento) necesario para poder usar la librería:
+
+```bash
+python -m spacy download es_core_news_sm
+```
+Y dentro del script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py#L96)) ir a la linea 96, comentarla (#) y descomentar la linea siguiente, tal como se muestra a continuación:
+
+```python
+# nlp = en_core_web_sm.load()
+nlp = spacy.load("es_core_news_sm")
+```
+<br>
 
 3) a) Una vez terminado, basta nomás con ejecutar ambos scripts en el sig. orden:
 
