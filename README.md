@@ -14,10 +14,12 @@ El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/
 
 ![Imagen 1](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-1.png)
 
-El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico con los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Pero primero obtiene valores actuales de dolar blue desde la API de [CriptoYa.com](https://criptoya.com/ar) y del euro blue del sitio de [PrecioEuroBlue.com.ar](https://www.precioeuroblue.com.ar/). Con estos valores se puede realizar la conversión a pesos y se muestra finalmente un plot con linea de salario medio:
-
+El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico con los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Pero primero obtiene valores actuales de dolar blue desde la API de [CriptoYa.com](https://criptoya.com/ar) y del euro blue del sitio de [PrecioEuroBlue.com.ar](https://www.precioeuroblue.com.ar/).
+Con estos valores en mano, se puede realizar la conversión a pesos y obtener valores medios:
 
 ![Imagen 2](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-2.png)
+
+Y mostrar finalmente un plot con todos los salarios en bruto y una linea de salario medio:
 
 ![Imagen 3](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-3.png)
 
