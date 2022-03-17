@@ -10,16 +10,16 @@ La idea nace de mera curiosidad por querer saber cuál era promedio de salarios,
 
 ## Descripción
 
-El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts de dicho thread. Y luego se filtra los mismos según determinados parámetros (empleado tanto Regex como la librería [spaCy](https://spacy.io/) para dicha tarea) y así obtener todos los salarios brutos vertidos en esos posts:
+El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts del mencionado thread. Después se filtra los mismos según determinados parámetros (empleado para esta tarea tanto regex como la librería [spaCy](https://spacy.io/)) y así obtener todos los salarios brutos que fueron recolectados de todos los posts (o más específicamente, aquellos posts siguieron un formato de mensaje establecido en el 1° mensaje del thread):
 
 ![Imagen 1](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-1.png)
 
-El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico con los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Pero primero obtiene valores actuales de dolar blue desde la API de [CriptoYa.com](https://criptoya.com/ar) y del euro blue del sitio de [PrecioEuroBlue.com.ar](https://www.precioeuroblue.com.ar/).
-Con estos valores en mano, se puede realizar la conversión a pesos y obtener valores medios:
+El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Pero antes de hacer esto se obtiene primero el valor del dolar blue del día desde la API de [CriptoYa.com](https://criptoya.com/ar) y del euro blue desde la web de [PrecioEuroBlue.com.ar](https://www.precioeuroblue.com.ar/).
+Ya con estos valores a disposición se puede realizar la conversión a pesos y obtener los valores medios necesarios:
 
 ![Imagen 2](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-2.png)
 
-Y mostrar finalmente un plot con todos los salarios en bruto y una linea de salario medio:
+Para así mostrar finalmente el plot con todos los salarios en bruto convertidos a pesos y una linea de salario medio:
 
 ![Imagen 3](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-3.png)
 
