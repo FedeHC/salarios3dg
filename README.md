@@ -10,11 +10,11 @@ La idea nace de mera curiosidad por querer saber cuál era promedio de salarios,
 
 ## Descripción
 
-El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts de dicho thread. Y luego se filtra los mismos según determinados parámetros (empleado tanto Regex como la librería [spaCy](https://spacy.io/) para dicha tarea) y así obtener todos los salarios brutos vertidos en esos posts.
+El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts de dicho thread. Y luego se filtra los mismos según determinados parámetros (empleado tanto Regex como la librería [spaCy](https://spacy.io/) para dicha tarea) y así obtener todos los salarios brutos vertidos en esos posts:
 
 ![Imagen 1](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-1.png)
 
-El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico con los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Básicamente se muestra un plot con linea de salario medio.
+El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/plotear_salarios.py)) se encargar de mostrar en un gráfico con los resultados obtenidos, empleado la librería [Seaborn](https://seaborn.pydata.org/). Pero primero obtiene valores actuales de dolar blue desde la API de [CriptoYa.com](https://criptoya.com/ar) y del euro blue del sitio de [PrecioEuroBlue.com.ar](https://www.precioeuroblue.com.ar/). Con estos valores se puede realizar la conversión a pesos y se muestra finalmente un plot con linea de salario medio:
 
 
 ![Imagen 2](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-2.png)
