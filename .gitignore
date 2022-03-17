@@ -1,0 +1,5 @@
+__pycache__
+utiles
+data/resultados.json
+data/db.json
+data/last_activity.log
