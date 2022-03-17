@@ -6,11 +6,11 @@ Dos simples scripts para calcular y mostrar la media de salarios (en bruto) a pa
 
 [2022 - ¿Cuánto ganás/cobrás?](https://foros.3dgames.com.ar/threads/1059022-2022-cuanto-ganas-cobras/page1)
 
-La idea nace de mera curiosidad por querer saber cuál era promedio de salarios, notando los elevados montos que los usuarios subían al thread. Estos salarios no parecían demasiado representativos en un principio, teniendo en mente los datos públicos que uno puede ver de encuestas como las de [SysArmy](https://sueldos.openqube.io/encuesta-sueldos-2022.01/), [Encuestas IT](https://www.encuestasit.com/sueldo-desarrollador-de-software-programador-argentina-1), [cuantoGano](https://www.cuantogano.com/sueldos/it-programacion.html) o incluso datos de [CESSI](https://www.cessi.org.ar/ver-noticias-cessi-la-evolucion-de-los-salarios-en-la-industria-it-2755).
+La idea nace de mera curiosidad de querer saber cuál era promedio de salarios, notando los elevados montos que los usuarios subían al thread. Estos salarios no parecían demasiado representativos en un principio, teniendo en mente los datos públicos que uno puede ver de encuestas como las de [SysArmy](https://sueldos.openqube.io/encuesta-sueldos-2022.01/), [Encuestas IT](https://www.encuestasit.com/sueldo-desarrollador-de-software-programador-argentina-1), [cuantoGano](https://www.cuantogano.com/sueldos/it-programacion.html) o incluso datos de [CESSI](https://www.cessi.org.ar/ver-noticias-cessi-la-evolucion-de-los-salarios-en-la-industria-it-2755).
 
 ## Descripción
 
-El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts del mencionado thread. Después se filtra los mismos según determinados parámetros (empleado para esta tarea tanto regex como la librería [spaCy](https://spacy.io/)) y así obtener todos los salarios brutos que fueron recolectados de todos los posts (o más específicamente, aquellos posts siguieron un formato de mensaje establecido en el 1° mensaje del thread):
+El 1° script ([obtener_salarios.py](https://github.com/FedeHC/salarios3dg/blob/main/obtener_salarios.py)) se encarga de buscar todos los posts del mencionado thread. Después se filtra los mismos según determinados parámetros (empleado para esta tarea tanto regex como la librería [spaCy](https://spacy.io/)) y así obtener todos los salarios brutos que fueron recolectados de todos los posts (o más específicamente, de aquellos posts siguieron un formato de mensaje establecido en el 1° mensaje del thread):
 
 ![Imagen 1](https://raw.githubusercontent.com/FedeHC/salarios3dg/main/images/captura-1.png)
 
