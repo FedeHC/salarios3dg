@@ -28,13 +28,15 @@ El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/
 git clone git@github.com:FedeHC/salarios3dg.git
 ```
 
-2) a) Es recomendable usar un entorno virtual como por ej. [VirtualEnv](https://github.com/pypa/virtualenv):
+Con el repo clonado y dentro de la carpeta de descarga del repositorio, procedemos con los sig. pasos.
+
+2) a) Antes es recomendable usar un entorno virtual como por ej. [VirtualEnv](https://github.com/pypa/virtualenv):
 
 ```bash
 virtualenv salarios3DG
 ```
 
-2) b) E instalar dentro de éste todas las librerías usadas por ambos scripts:
+2) b) Y recién luego instalar dentro de éste último todas las librerías usadas por ambos scripts:
 
 ```bash
 pip install -r requirements.txt
