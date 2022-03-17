@@ -23,7 +23,7 @@ El 2° script ([plotear_salarios.py](https://github.com/FedeHC/salarios3dg/blob/
 
 ## Instalación y uso
 
-1) Si se tiene ya instalado git en nuestro sistema operativo, basta nomás con clonar el presente repositorio:
+1) Si se tiene ya instalado [Git](https://git-scm.com/downloads) en nuestro sistema operativo, basta nomás con clonar el presente repositorio:
 ```bash
 git clone git@github.com:FedeHC/salarios3dg.git
 ```
